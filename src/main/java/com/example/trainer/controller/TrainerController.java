@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(name="/trainers")
+@RequestMapping("/trainers")
 @Api(value = "Trainer Controller class", description = "This class allows to interact with Trainer object")
 public class TrainerController {
     @Autowired

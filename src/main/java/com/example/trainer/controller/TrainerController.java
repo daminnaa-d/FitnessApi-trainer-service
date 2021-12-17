@@ -19,6 +19,7 @@ public class TrainerController {
 
     @GetMapping("")
     @ApiOperation(value = "Method to get list of trainers", response = List.class)
+    @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<?> getAllTrainers(){
         return ResponseEntity.ok(trainerService.getAllTrainers());
     }
